@@ -1,0 +1,61 @@
+<style>
+    html, body { 
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+        overflow-y: hidden !important;
+    }
+    
+    .bubble-element.Group.baTaGzp.bubble-r-container-wrapper {
+        overflow: hidden !important; 
+    }
+    
+    .bubble-element.Image.baTaHaBaR {
+        height: 100% !important;  
+        width: 100% !important;   
+        object-fit: cover !important; 
+        overflow: hidden;         
+    }
+    
+    
+    
+    @media screen and (orientation: landscape) {
+            body {
+                display: none;
+            }
+            .landscape-warning {
+                display: block;
+                text-align: center;
+                margin-top: 50vh;
+                font-size: 20px;
+                color: red;
+            }
+        }
+    
+        @media screen and (orientation: portrait) {
+            .landsc
+    ape-warning {
+                display: none;
+            }
+        }
+    
+    </style>
+    
+    <script>
+        // Список URL изображений, которые нужно предзагрузить
+        const imagesToPreload = [
+    "https://0a4e6440e2418744681965b0fe3b86d6.cdn.bubble.io/f1726653018203x939774475088087200/bg1.png", 
+            "https://0a4e6440e2418744681965b0fe3b86d6.cdn.bubble.io/f1726653323440x730271284170702200/bg2.png",
+            "https://0a4e6440e2418744681965b0fe3b86d6.cdn.bubble.io/f1726653350564x300849444845159500/bg3.png",
+    "https://0a4e6440e2418744681965b0fe3b86d6.cdn.bubble.io/f1726652882548x419774183785818900/bg4.png",
+            // Добавьте все нужные URL изображений
+        ];
+    
+        // Функция для предзагрузки
+        imagesToPreload.forEach(function(url) {
+            const img = new Image();
+            img.src = url;
+        });
+    </script>
+    

@@ -25,7 +25,7 @@ router = Router()
 dp.include_router(router)
 
 keyboard = InlineKeyboardMarkup(inline_keyboard=[
-    [InlineKeyboardButton(text="Вход в мини-приложение", url=GAME_URL)]
+    [InlineKeyboardButton(text="погнали!", url=GAME_URL)]
 ])
 # Command handler for /start
 @router.message(Command(commands=['start']))
@@ -33,7 +33,7 @@ keyboard = InlineKeyboardMarkup(inline_keyboard=[
 
 async def send_welcome(message: types.Message):
     # Create inline button for entering the miniapp
-    await message.answer("Добро пожаловать в бот На пике эмоций с билайном!\n\nВы можете войти в мини-приложение.", reply_markup=keyboard)
+    await message.answer("готов проверить свои знания?", reply_markup=keyboard)
 
 # Command handler for /rules
 # @router.message(Command(commands=['rules']))

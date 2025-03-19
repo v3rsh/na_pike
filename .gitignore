@@ -2,3 +2,4 @@ qrcode.png
 qrgen.py
 .env
 venv/*
+*.png
