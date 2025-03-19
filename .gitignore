@@ -3,3 +3,4 @@ qrgen.py
 .env
 venv/*
 *.png
+header.html
