@@ -4,3 +4,4 @@ qrgen.py
 venv/*
 *.png
 header.html
+questions.csv
